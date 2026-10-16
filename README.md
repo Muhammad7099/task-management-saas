@@ -1,4 +1,3 @@
-markdown
 # Task Management SaaS
 
 Система управления задачами (аналог Asana и Jira) для эффективной работы команд.
