@@ -22,3 +22,9 @@ Thumbs.db
 # Настройки VS Code: игнорируем всё внутри, кроме списка рекомендаций расширений
 .vscode/*
 !.vscode/extensions.json
+
+# Скриншоты и изображения, которые не должны попадать в репозиторий
+image.png
+image-1.png
+image-2.png
+image-3.png
