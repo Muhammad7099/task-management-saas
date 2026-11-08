@@ -1,10 +1,16 @@
-function App() {
+import { Navigate, Route, Routes } from "react-router-dom";
+import DashboardPage from "./pages/DashboardPage";
+import ProjectBoardPage from "./pages/ProjectBoardPage";
+import NotFoundPage from "./pages/NotFoundPage";
+
+
+export default function App() {
   return (
-    <div>
-      <h1>Task Management Saas</h1>
-
-    </div>
-  );
+    <Routes>
+      <Route path="/" element={<Navigate to="/dashboard" replace />} />
+      <Route path="/dashboard" element={<DashboardPage />} />
+      <Route path="/projects/:projectId" element={<ProjectBoardPage />} />
+      <Route path="*" element={<NotFoundPage />} />
+    </Routes>
+  )
 }
-
-export default App;
